@@ -11,8 +11,7 @@ import { arbitrum, mainnet, zkSyncTestnet } from "wagmi/chains";
 // Replace this project ID with yours
 // from cloud.walletconnect.com
 const projectId = "347016b206144f9283eaf00986a5eb3c";
-
-const chains = [arbitrum,mainnet];
+const chains = [mainnet, arbitrum, zkSyncTestnet];
 
 const metadata = {
   name: 'Web3Modal',
