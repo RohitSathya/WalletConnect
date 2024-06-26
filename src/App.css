@@ -40,3 +40,108 @@
 .read-the-docs {
   color: #888;
 }
+
+.bg-yellow-400 {
+  background-color: #272002; /* Yellow background color */
+}
+
+.bg-dark-brown {
+  background-color: #ddcf8a; /* Dark brown background color */
+}
+
+.bg-black {
+  background-color: #000000; /* Black button background color */
+}
+
+.text-white {
+  color: #ffffff; /* White text color */
+}
+
+.bg-pink-500 {
+  background-color: #ec4899; /* Pink progress bar color */
+}
+
+.bg-purple-700 {
+  background-color: #6b21a8; /* Purple button background color */
+}
+
+.bg-gray-300 {
+  background-color: #e2e8f0; /* Light gray color for the progress bar background */
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.inset-0 {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.timer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: 'Roboto Mono', monospace;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 20px;
+}
+
+.timer-section {
+  text-align: center;
+  flex: 1;
+  color: #333;
+}
+
+.timer-value {
+  font-size: 2.5rem;
+  color: #ff6b6b;
+}
+
+.timer-label {
+  font-size: 1rem;
+  color: #555;
+}
+
+.timer-divider {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.bg-gradient-to-r {
+  background: linear-gradient(to right, #ec4899, #6b21a8);
+}
+
+button:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s;
+}
+
+.claim-button {
+  width: 100%;
+  max-width: 600px;
+  padding: 15px 0;
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: 25px;
+  background: linear-gradient(to right, #ec4899, #6b21a8);
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.sa{
+  margin-top: 25px;
+}
+.tb{
+  background: white;
+  width: 400px;
+  height: 40px;
+}
