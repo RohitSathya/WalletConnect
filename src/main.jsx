@@ -10,7 +10,7 @@ import { arbitrum, mainnet, zkSyncTestnet } from "wagmi/chains";
 
 // Replace this project ID with yours
 // from cloud.walletconnect.com
-const projectId = "347016b206144f9283eaf00986a5eb3c";
+const projectId = "5ce5f3ce722452e93cada83e164a8f04";
 
 const chains = [arbitrum,mainnet];
 
