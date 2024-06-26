@@ -1,52 +1,16 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+:root {
+  /* Customize the button background color */
+  --w3m-background-color: #ff6b6b; /* Example color */
+  --w3m-border-radius: 8px; /* Customize the border radius */
+  --w3m-text-color: #ffffff; /* Customize the text color */
 }
 
 .bg-yellow-400 {
-  background-color: #272002; /* Yellow background color */
+  background-color: #f7d547; /* Yellow background color */
 }
 
 .bg-dark-brown {
-  background-color: #ddcf8a; /* Dark brown background color */
+  background-color: #3a320c; /* Dark brown background color */
 }
 
 .bg-black {
@@ -127,9 +91,7 @@ button:hover {
 }
 
 .claim-button {
-  width: 100%;
-  max-width: 600px;
-  padding: 15px 0;
+  padding: 20px 0;
   font-size: 1.5rem;
   text-align: center;
   border-radius: 25px;
@@ -137,11 +99,17 @@ button:hover {
   color: #fff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.sa{
+
+.sa {
   margin-top: 25px;
 }
-.tb{
+
+.tb {
   background: white;
   width: 400px;
   height: 40px;
+}
+
+.w3 {
+  display: none;
 }
