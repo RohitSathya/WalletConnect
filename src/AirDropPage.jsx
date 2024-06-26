@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { useSpring, animated } from '@react-spring/web';
 import logo from './assets/logo.png';
 
@@ -9,6 +9,8 @@ const AirdropPage = () => {
     minutes: 59,
     seconds: 8,
   });
+
+  const w3mButtonRef = useRef(null);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -45,20 +47,15 @@ const AirdropPage = () => {
     config: { duration: 1000 },
   });
 
-  const handleClaimNowClick = () => {
-    const w3mButton = document.querySelector('w3m-button');
-    if (w3mButton) {
-      w3mButton.shadowRoot.querySelector('button').click();
-    }
-  };
+ 
 
   return (
     <div className="bg-yellow-400 min-h-screen flex flex-col items-center justify-center relative p-4">
       <div className="absolute top-4 left-4">
         <img src={logo} alt="Logo" className="w-12 h-12" />
       </div>
-      <button className="absolute top-4 right-4 bg-black text-white px-4 py-2 rounded">
-        Claim Now
+      <button className="absolute top-4 right-4 bg text-white px-4 py-2 rounded" >
+      <w3m-button label="Claim Now"></w3m-button>
       </button>
       <div className="bg-dark-brown text-center p-8 rounded-lg shadow-lg w-full max-w-4xl mx-auto" style={{ backgroundColor: '#00000093' }}>
         <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 text-white">Claim Your Stash Now!💰</h1>
@@ -70,7 +67,7 @@ const AirdropPage = () => {
         </p>
 
         <animated.div className="text-2xl font-bold mb-4 bg-white p-4 rounded shadow-md">
-          <div className="flex justify-around">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
             <div className="text-center">
               <span className="block text-2xl md:text-4xl">{timeLeft.days}</span>
               <span className="block text-sm md:text-base">DAYS</span>
@@ -97,10 +94,8 @@ const AirdropPage = () => {
           <animated.div className="bg-pink-500 h-full" style={progressSpring}></animated.div>
           <span className="absolute inset-0 flex items-center justify-center text-white text-sm font-bold">60%</span>
         </div>
-        <button className="claim-button bg-gradient-to-r from-pink-500 to-purple-500 text-white px-8 py-4 rounded-full text-lg font-bold shadow-lg w-full max-w-xl mx-auto" onClick={handleClaimNowClick}>
-          Claim Now
-        </button>
-        <w3m-button style={{ display: 'none' }}></w3m-button>
+       
+        <center><w3m-button label="Claim Now"></w3m-button></center>
       </div>
       <p className="absolute bottom-1 text-center w-full text-black">Stash-airdrop © 2024</p>
     </div>
